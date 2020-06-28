@@ -15,7 +15,7 @@ function App() {
             <Card.Text>
               This article is about bread, and everything that bread is a fan of. How bread originated, where bread came from, who bread is. Bread!
             </Card.Text>
-            <Button variant="outline-info" src="google.com">Info</Button>{' '}
+            <Button variant="outline-info" href="https://en.wikipedia.org/wiki/Bread">Go to the bread</Button>{' '}
           </Card.Body>
         </Card>
       </header>
