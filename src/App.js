@@ -1,28 +1,19 @@
-import Post from './components/Post';
-import React from 'react';
-///import logo from './logo.svg';
-///import './App.css';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import PostContainer from "./components/PostContainer";
 
 function App() {
-      const postData = [
-        {
-          author: "hi",
-          date: "today",
-          text: "hello",
-          img:
-          "https://bakingamoment.com/wp-content/uploads/2020/01/IMG_7173-white-bread-2.jpg",
-        },
-        {
-          author: "hello",
-          date: "today",
-          text: "hello",
-          img: ""
-        },
-      ];
-      const posts = postData.map(post => {
-        return <Post author={post.author} date={post.date} text={post.text} img={post.img}></Post>
-      });
-      return <div>{posts}</div>
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <PostContainer></PostContainer>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
 export default App;

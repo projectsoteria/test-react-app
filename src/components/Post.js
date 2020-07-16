@@ -4,14 +4,13 @@ import Card from 'react-bootstrap/Card';
 
 export default function ({author, text, imageUrl, date, comments }) {
   return (
-    <Card>
-  <Card.Header>Featured</Card.Header>
-  <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
-    <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
-    </Card.Text>
-  </Card.Body>
-</Card>
+    ///style={{ background-color: 'pink' }}
+    <Card bg="primary">
+      <Card.Header>{date}</Card.Header>
+      <Card.Body>
+        <Card.Title>{author}</Card.Title>
+        <Card.Text>{text}</Card.Text>
+      </Card.Body>
+    </Card>
 );
 }
