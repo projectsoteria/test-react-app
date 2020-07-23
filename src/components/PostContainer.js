@@ -2,22 +2,7 @@ import React from "react";
 import Post from "./Post";
 import CardColumns from "react-bootstrap/CardColumns";
 
-export default function ({ author, text, imageUrl, date, comments }) {
-  const postData = [
-    {
-      author: "hi",
-      date: "today",
-      text: "hello",
-      img:
-        "https://bakingamoment.com/wp-content/uploads/2020/01/IMG_7173-white-bread-2.jpg",
-    },
-    {
-      author: "hello",
-      date: "today",
-      text: "hello",
-      img: "",
-    },
-  ];
+export default function ({ postData }) {
   const posts = postData.map((post) => {
     return (
       <Post
