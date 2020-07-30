@@ -16,6 +16,7 @@ export default function ({ postData }) {
   });
   return (
     <div>
+      <p>Post</p>
       <CardColumns>{posts}</CardColumns>
     </div>
   );

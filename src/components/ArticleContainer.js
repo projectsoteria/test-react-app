@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Article from "./Article"
 import CardColumns from "react-bootstrap/CardColumns";
 
@@ -17,6 +17,7 @@ export default function ({articleData})
   });
   return (
     <div>
+      <p>Article</p>
       <CardColumns>{articles}</CardColumns>
     </div>
   );

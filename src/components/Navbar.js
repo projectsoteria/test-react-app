@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-export default function ({ title, user }) {
+export default function ({ title, user, onSelect }) {
   let content = undefined;
   console.log(user);
   if (user === undefined) {
@@ -24,6 +25,23 @@ export default function ({ title, user }) {
   return (
     <Navbar>
       <Navbar.Brand href="#home">{title}</Navbar.Brand>
+      <Nav
+        activeKey="/home"
+        onSelect={(selectedKey) => onSelect(selectedKey)}
+      >
+        <Nav.Item>
+          <Nav.Link eventKey="Home">Home</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="Articles">Articles</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="Posts">Posts</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="About">About</Nav.Link>
+        </Nav.Item>
+      </Nav>
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">
         {content}
