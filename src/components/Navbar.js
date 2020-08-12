@@ -24,9 +24,9 @@ export default function ({ title, user, onSelect }) {
   }
   return (
     <Navbar>
-      <Navbar.Brand href="#home">{title}</Navbar.Brand>
+      <Navbar.Brand href="/home">{title}</Navbar.Brand>
       <Nav
-        activeKey="/home"
+        defaultActiveKey="/home"
         onSelect={(selectedKey) => onSelect(selectedKey)}
       >
         <Nav.Item>
