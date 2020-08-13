@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 export default function () {
   return (
-    <Jumbotron fluid>
+    <Jumbotron fluid bg="primary">
       <Container>
         <h1>Welcome to Project Soteria</h1>
         <p>

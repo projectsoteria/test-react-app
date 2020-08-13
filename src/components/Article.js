@@ -1,7 +1,7 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
+import React from "react";
+import Card from "react-bootstrap/Card";
 
-export default function({author, text, imageUrl, date, comments}) {
+export default function ({ author, text, imageUrl, date, comments }) {
   return (
     <Card bg="primary">
       <Card.Header>{date}</Card.Header>
@@ -10,5 +10,5 @@ export default function({author, text, imageUrl, date, comments}) {
         <Card.Text>{text}</Card.Text>
       </Card.Body>
     </Card>
-  )
+  );
 }

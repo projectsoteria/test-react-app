@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function ({ title, user }) {
   return (
-    <Navbar expand="lg" variant="bottom" bg="light">
+    <Navbar fixed="bottom" expand="lg" variant="bottom" bg="success">
       <Navbar.Brand href="#">{title}</Navbar.Brand>
     </Navbar>
   );

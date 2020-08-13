@@ -1,0 +1,12 @@
+// override the original
+
+$body-bg: #e8e1ef;
+
+$theme-colors: (
+  "primary": #c4f4c7,
+  "secondary": #c7ffda,
+  "success": #fee9e1,
+  "info": #d9fff8,
+);
+// install bootsrtap
+@import "~bootstrap/scss/bootstrap.scss";

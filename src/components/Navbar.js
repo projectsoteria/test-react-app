@@ -23,7 +23,7 @@ export default function ({ title, user, onSelect }) {
     );
   }
   return (
-    <Navbar>
+    <Navbar className="mb-3" fixed="top" bg="info">
       <Navbar.Brand href="/home">{title}</Navbar.Brand>
       <Nav
         defaultActiveKey="/home"
