@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -23,28 +24,20 @@ export default function ({ title, user, onSelect }) {
     );
   }
   return (
-    <Navbar className="mb-3" fixed="top" bg="info">
+    <Navbar bg="light" expand="lg" fixed="top" bg="info">
       <Navbar.Brand href="/home">{title}</Navbar.Brand>
-      <Nav
-        defaultActiveKey="/home"
-        onSelect={(selectedKey) => onSelect(selectedKey)}
-      >
-        <Nav.Item>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav
+          className="mr-auto"
+          defaultActiveKey="/home"
+          onSelect={(selectedKey) => onSelect(selectedKey)}
+        >
           <Nav.Link eventKey="Home">Home</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link eventKey="Articles">Articles</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link eventKey="Posts">Posts</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link eventKey="About">About</Nav.Link>
-        </Nav.Item>
-      </Nav>
-      <Navbar.Toggle />
-      <Navbar.Collapse className="justify-content-end">
-        {content}
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
