@@ -3,8 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-
+import { Form, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 export default function ({ title, user, onSelect }) {
   let content = undefined;
   console.log(user);
@@ -24,7 +23,7 @@ export default function ({ title, user, onSelect }) {
     );
   }
   return (
-    <Navbar bg="light" expand="lg" fixed="top" bg="info">
+    <Navbar expand="lg" fixed="top" bg="info">
       <Navbar.Brand href="/home">{title}</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -38,6 +37,10 @@ export default function ({ title, user, onSelect }) {
           <Nav.Link eventKey="Posts">Posts</Nav.Link>
           <Nav.Link eventKey="About">About</Nav.Link>
         </Nav>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-success">Search</Button>
+        </Form>
       </Navbar.Collapse>
     </Navbar>
   );

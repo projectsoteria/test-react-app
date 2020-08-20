@@ -1,10 +1,14 @@
 // override the original
 
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
 $body-bg: #e8e1ef;
+$font-family-base: "Josefin Sans", sans-serif;
+$jumbotron-bg: #c4f4c7;
 
 $theme-colors: (
   "primary": #c4f4c7,
-  "secondary": #c7ffda,
+  "secondary": #000000,
   "success": #fee9e1,
   "info": #d9fff8,
 );
