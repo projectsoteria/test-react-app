@@ -41,6 +41,7 @@ export default function ({ title, user, onSelect }) {
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button variant="outline-success">Search</Button>
         </Form>
+        <Nav.Link>{content}</Nav.Link>
       </Navbar.Collapse>
     </Navbar>
   );
