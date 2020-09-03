@@ -1,4 +1,5 @@
 import React from "react";
+import PlusButton from "./PlusButton";
 import Post from "./Post";
 import CardColumns from "react-bootstrap/CardColumns";
 
@@ -18,6 +19,7 @@ export default function ({ postData }) {
     <div>
       <p>Post</p>
       <CardColumns>{posts}</CardColumns>
+      <PlusButton></PlusButton>
     </div>
   );
 }
