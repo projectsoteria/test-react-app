@@ -1,1 +1,9 @@
-{}
+{
+	"auth": {
+		"testreactappa637719a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
