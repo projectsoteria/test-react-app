@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
+///import PostButton from "./components/PostButton";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import About from "./components/About";
@@ -8,6 +9,7 @@ import Footer from "./components/Footer";
 import PostContainer from "./components/PostContainer";
 import ArticleContainer from "./components/ArticleContainer";
 import Navbar from "./components/Navbar";
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
 function App() {
   const [eventKey, setEventKey] = useState("Home");
@@ -130,4 +132,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
