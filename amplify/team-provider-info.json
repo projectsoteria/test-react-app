@@ -14,6 +14,12 @@
         "categories": {
             "auth": {
                 "testreactappa637719a": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3nm74ojrvegnx",
+                    "type": "manual"
+                }
             }
         }
     }
